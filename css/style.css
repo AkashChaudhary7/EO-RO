@@ -1,140 +1,166 @@
-/* General Body */
+/* --- Body & Fonts --- */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  background: linear-gradient(135deg, #f8f0fc, #f0f8ff);
-  color: #333;
-  transition: background 0.5s, color 0.5s;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: #333;
+    transition: all 0.5s ease;
 }
 
-/* Dark mode */
 .dark {
-  background: linear-gradient(135deg, #222, #444);
-  color: #eee;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #eee;
 }
 
-/* Header & Navigation */
+/* --- Header --- */
 header {
-  padding: 15px 25px;
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 3px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header h1 {
-  flex: 1;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    flex: 1;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
 
-/* Nav Button */
-.nav-btn {
-  background: #ff6b81;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 12px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s, background 0.3s;
-}
-.nav-btn:hover {
-  transform: scale(1.1);
-  background: #ff4757;
+/* --- Navigation Buttons --- */
+.nav-btn, button {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
-/* Container Boxes */
+button:hover, .nav-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+}
+
+/* --- Container Boxes --- */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 25px;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
 }
 
+/* Glassmorphism box */
 .box {
-  background: #fff;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-  min-width: 200px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    min-width: 200px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
+
 .box:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-  background: #ffe6f0;
-  color: #333;
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    background: rgba(255,255,255,0.35);
 }
 
-/* Search Box */
+/* --- Search Box --- */
 .search-box {
-  width: 80%;
-  max-width: 400px;
-  padding: 12px 15px;
-  margin: 15px auto;
-  display: block;
-  border-radius: 15px;
-  border: 2px solid #ddd;
-  text-align: center;
-  font-size: 1rem;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid rgba(255,255,255,0.3);
+    text-align: center;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s;
 }
 
-/* Chapter Section */
+.search-box:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* --- Chapter Section --- */
 .chapter-section {
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px 25px;
-  border-radius: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.2s, background 0.3s;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.3s, background 0.3s;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
 }
+
 .chapter-section:hover {
-  transform: translateY(-5px);
-  background: #f3f0ff;
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.35);
 }
 
-/* Dark Mode Adjustments */
-.dark .box, .dark .chapter-section {
-  background: #333;
-  color: #fff;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
-}
-
-/* Footer */
+/* --- Footer --- */
 footer {
-  padding: 15px;
-  text-align: center;
-  font-weight: bold;
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
-  color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-size: 1rem;
 }
 
-/* Buttons */
-button {
-  cursor: pointer;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 12px;
-  background: #ff6b81;
-  color: #fff;
-  font-weight: bold;
-  transition: transform 0.2s, background 0.3s;
-}
-button:hover {
-  transform: scale(1.05);
-  background: #ff4757;
+/* --- Dark Mode Adjustments --- */
+.dark .box, .dark .chapter-section {
+    background: rgba(50,50,50,0.4);
+    color: #fff;
 }
 
-/* Centered Text */
+.dark .search-box {
+    background: rgba(50,50,50,0.2);
+    color: #fff;
+    border-color: rgba(255,255,255,0.2);
+}
+
+/* --- Quiz Styling --- */
+ul { list-style: none; padding: 0; }
+li { padding: 8px 0; cursor: pointer; border-radius: 12px; transition: 0.3s; }
+li:hover { background: rgba(255,255,255,0.3); }
+
+/* --- Centering Text --- */
 h1, h3, p, li {
-  text-align: center;
+    text-align: center;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .box { min-width: 150px; padding: 20px; font-size: 1rem; }
+    header h1 { font-size: 1.5rem; }
 }
