@@ -1,25 +1,25 @@
-/* --- Body & Fonts --- */
+/* ================= Body & Fonts ================= */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e0d4f7, #d4f0f7);
+    background: linear-gradient(135deg, #e0d4f7, #d4f0f7); /* Soft lavender to gentle blue */
     color: #333;
     transition: all 0.5s ease;
 }
 
 .dark {
-    background: linear-gradient(135deg,#1e1e2e, #2e344e);
+    background: linear-gradient(135deg, #1e1e2e, #2e344e); /* Soft dark gradient */
     color: #eee;
 }
 
-/* --- Header --- */
+/* ================= Header ================= */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.15); /* glass effect */
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(255,255,255,0.3);
     position: sticky;
@@ -32,29 +32,28 @@ header h1 {
     font-weight: 700;
     text-align: center;
     flex: 1;
-    color: #5c3e91;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    color: #5c3e91; /* soft purple */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
-/* --- Navigation Buttons --- */
+/* ================= Navigation Buttons ================= */
 .nav-btn, button {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* soft blue gradient */
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    color: #333;
 }
 
 button:hover, .nav-btn:hover {
     transform: scale(1.05);
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
 }
 
-/* --- Container Boxes --- */
+/* ================= Container & Boxes ================= */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +62,7 @@ button:hover, .nav-btn:hover {
     padding: 25px;
 }
 
-/* Glassmorphism box */
+/* Glassmorphism Box */
 .box {
     background: rgba(255,255,255,0.25);
     backdrop-filter: blur(10px);
@@ -74,18 +73,19 @@ button:hover, .nav-btn:hover {
     font-weight: 600;
     font-size: 1.2rem;
     cursor: pointer;
-    color: #fff;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    color: #333;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
     transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .box:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
     background: rgba(255,255,255,0.35);
+    color: #222;
 }
 
-/* --- Search Box --- */
+/* ================= Search Box ================= */
 .search-box {
     width: 80%;
     max-width: 400px;
@@ -93,11 +93,11 @@ button:hover, .nav-btn:hover {
     display: block;
     padding: 12px 20px;
     border-radius: 25px;
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid rgba(200,200,200,0.3);
     text-align: center;
     font-size: 1rem;
     background: rgba(255,255,255,0.2);
-    color: #fff;
+    color: #333;
     backdrop-filter: blur(5px);
     transition: all 0.3s;
 }
@@ -108,9 +108,9 @@ button:hover, .nav-btn:hover {
     box-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 
-/* --- Chapter Section --- */
+/* ================= Chapter Section ================= */
 .chapter-section {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.25);
     backdrop-filter: blur(8px);
     padding: 25px;
     border-radius: 25px;
@@ -118,7 +118,7 @@ button:hover, .nav-btn:hover {
     transition: transform 0.3s, background 0.3s;
     text-align: center;
     font-weight: 500;
-    color: #fff;
+    color: #333;
 }
 
 .chapter-section:hover {
@@ -126,41 +126,42 @@ button:hover, .nav-btn:hover {
     background: rgba(255,255,255,0.35);
 }
 
-/* --- Footer --- */
+/* ================= Footer ================= */
 footer {
     padding: 15px;
     text-align: center;
     font-weight: 700;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
-    color: #fff;
+    color: #333;
     font-size: 1rem;
 }
 
-/* --- Dark Mode Adjustments --- */
+/* ================= Dark Mode Adjustments ================= */
 .dark .box, .dark .chapter-section {
     background: rgba(50,50,50,0.4);
-    color: #fff;
+    color: #eee;
 }
 
 .dark .search-box {
     background: rgba(50,50,50,0.2);
-    color: #fff;
+    color: #eee;
     border-color: rgba(255,255,255,0.2);
 }
 
-/* --- Quiz Styling --- */
+/* ================= Quiz Styling ================= */
 ul { list-style: none; padding: 0; }
 li { padding: 8px 0; cursor: pointer; border-radius: 12px; transition: 0.3s; }
-li:hover { background: rgba(255,255,255,0.3); }
+li:hover { background: rgba(255,255,255,0.25); }
 
-/* --- Centering Text --- */
+/* ================= Centering Text ================= */
 h1, h3, p, li {
     text-align: center;
 }
 
-/* --- Responsive --- */
+/* ================= Responsive Design ================= */
 @media (max-width: 768px) {
     .box { min-width: 150px; padding: 20px; font-size: 1rem; }
     header h1 { font-size: 1.5rem; }
 }
+
