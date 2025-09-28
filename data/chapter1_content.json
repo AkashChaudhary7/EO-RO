@@ -1,1 +1,177 @@
-{"title":"Chapter 1: Introduction","sections":[{"heading":"Section 1: Scope","text":"This Act applies to all municipalities in Rajasthan."},{"heading":"Section 2: Objective","text":"The objective of this Act is to ensure effective governance."}]}
+{
+  "Section_2_Definitions": {
+    "Terms": [
+      {
+        "Term": "Auditor",
+        "Definition": "Defined as per Rajasthan Local Funds Audit Act, 1954",
+        "Related_Sections": ["Section 92", "Section 93"]
+      },
+      {
+        "Term": "Backward Classes",
+        "Definition": "Classes, not SC/ST; notified by State Government"
+      },
+      {
+        "Term": "Balance Sheet",
+        "Definition": "Prepared under section 92"
+      },
+      {
+        "Term": "Bio-medical Waste",
+        "Definition": "Waste from diagnosis/treatment/research/production/testing of biological materials",
+        "Types": [
+          "human anatomical",
+          "animal",
+          "microbiological",
+          "sharps",
+          "discarded medicines",
+          "solid",
+          "liquid",
+          "incineration ash",
+          "chemical"
+        ],
+        "Related_Sections": ["Section 239", "Section 282"]
+      },
+      {
+        "Term": "Bridge",
+        "Definition": "Includes culvert"
+      },
+      {
+        "Term": "Budget Estimate",
+        "Definition": "Prepared under section 87"
+      },
+      {
+        "Term": "Budget Grant",
+        "Definition": "Total expenditure sum in budget, modified by Municipality under Act provisions"
+      },
+      {
+        "Term": "Builder/Developer",
+        "Definition": "Agency/individual constructing on own/others’ land"
+      },
+      {
+        "Term": "Building",
+        "Definition": "Structure with foundation, walls, roofs, etc.; excludes temporary structures like tent, shamiana and boundary wall < 3 meter",
+        "Related_Sections": [
+          "Section 187",
+          "Section 194",
+          "Section 200",
+          "Section 207",
+          "Section 210"
+        ]
+      },
+      {
+        "Term": "Building Site",
+        "Definition": "Land portion held for building purpose"
+      },
+      {
+        "Term": "Bye-laws",
+        "Definition": "Made under this Act"
+      },
+      {
+        "Term": "Chairperson",
+        "Definition": "Chairman (Municipal Board); President (Municipal Council); Mayor (Municipal Corporation)",
+        "Related_Sections": [
+          "Section 59",
+          "Section 71",
+          "Section 86",
+          "Section 90",
+          "Section 115"
+        ]
+      },
+      {
+        "Term": "Chief Municipal Officer",
+        "Definition": "CEO-cum-Commissioner (Municipal Corporation); Commissioner (Council); Executive Officer (Board)",
+        "Related_Sections": ["Section 71", "Section 90", "Section 102", "Section 115", "Section 303"]
+      },
+      {
+        "Term": "Clear Days",
+        "Definition": "Notice period inclusive of Sundays/holidays, exclusive of notice receipt date and notice-specified date"
+      },
+      {
+        "Term": "Complex",
+        "Definition": "Building with ≥25 units (commercial) or ≥10 units (residential)"
+      },
+      {
+        "Term": "Corporator",
+        "Definition": "Member of Municipal Corporation"
+      },
+      {
+        "Term": "Councillor",
+        "Definition": "Member of Municipal Council"
+      },
+      {
+        "Term": "Dairy",
+        "Definition": "Place for milk supply/sale, excludes places selling milk for on-premises consumption only"
+      },
+      {
+        "Term": "Dangerous Disease",
+        "Definition": "cholera, plague, small-pox, cerebrospinal meningitis, diphtheria, tuberculosis, leprosy, influenza, encephalitis, poliomyelitis, or syphilis; other diseases notified by Govt."
+      }
+    ]
+  },
+  "Municipal_Body_Titles": [
+    {
+      "Municipal_Body_Type": "Municipal Board",
+      "Chairperson_Title": "Chairman",
+      "Vice_Chairperson_Title": "Vice-Chairman",
+      "Chief_Municipal_Officer_Title": "Executive Officer",
+      "Member_Title": "Member"
+    },
+    {
+      "Municipal_Body_Type": "Municipal Council",
+      "Chairperson_Title": "President",
+      "Vice_Chairperson_Title": "Vice-President",
+      "Chief_Municipal_Officer_Title": "Commissioner",
+      "Member_Title": "Councillor"
+    },
+    {
+      "Municipal_Body_Type": "Municipal Corporation",
+      "Chairperson_Title": "Mayor",
+      "Vice_Chairperson_Title": "Deputy Mayor",
+      "Chief_Municipal_Officer_Title": "Chief Executive Officer-cum-Commissioner",
+      "Member_Title": "Corporator"
+    }
+  ],
+  "Municipality_Election_Provisions": {
+    "Section_6_Composition": {
+      "Election_Method": "Directly elected from territorial constituencies (wards)",
+      "Minimum_Seats": 20,
+      "Nominated_Members": {
+        "Legislative_Assembly": 1,
+        "Others": "3 persons or 10% of elected members (whichever is less)"
+      },
+      "Voting_Rights": {
+        "Nominated": "Cannot vote",
+        "Legislative_Assembly": "Has voting rights in Board, Council, Corporation",
+        "House_of_People": "Has voting rights in Council and Corporation only"
+      },
+      "Seat_Reservation": {
+        "SC_ST": "Proportional to population",
+        "Backward_Classes": "Max 21 seats, min 1 seat if SC+ST ≤ 70%",
+        "Women": "50% of reserved seats and 50% of total seats"
+      }
+    },
+    "Section_7_Term_Office": {
+      "Duration": "5 years from first meeting",
+      "Dissolution": "Can be dissolved earlier",
+      "New_Municipality_Remaining_Term": "Continues for remainder of original term"
+    },
+    "Section_11_Election": {
+      "Authority": "State Election Commission",
+      "Responsibilities": ["Preparation of electoral rolls", "Conduct of elections"],
+      "Completion_Deadline": "Before expiry of term or within 6 months of dissolution"
+    }
+  },
+  "Section_45_Core_Functions": {
+    "Public_Health_Sanitation": ["Public health", "Sanitation", "Solid waste management", "Drainage", "Street cleaning", "Removing nuisances", "Offensive matters"],
+    "Lighting_Safety": ["Street lighting", "Fire extinguishing", "Protecting life/property"],
+    "Trade_Public_Spaces": ["Regulating offensive trades", "Removing obstructions", "Managing dangerous buildings"],
+    "Disposal_Maintenance": ["Disposal of dead/animal carcasses", "Maintaining cemeteries", "Public streets, culverts, wells, tanks"],
+    "Public_Facilities": ["Constructing latrines, privies, urinals, baths, fountains"],
+    "Street_Building": ["Naming streets", "Numbering houses", "Marking boundaries"],
+    "Registration": ["Birth & Death registration"],
+    "Animal_Control": ["Detaining stray dogs as per Section 249"],
+    "Police_Security": ["Salaries & facilities for municipal police", "Volunteer security forces"],
+    "Waste_Management": ["Compost manure preparation from waste"],
+    "Cattle_Management": ["Establishing & maintaining cattle pounds"],
+    "Population_Family_Welfare": ["Promoting family welfare", "Population control"]
+  }
+}
