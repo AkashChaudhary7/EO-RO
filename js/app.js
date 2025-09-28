@@ -33,6 +33,16 @@ function loadHome() {
       };
     });
 }
+// Add Home button to all pages except index
+document.querySelectorAll('header').forEach(header => {
+  if (!window.location.href.includes('index.html')) {
+    const homeBtn = document.createElement('button');
+    homeBtn.className = 'nav-btn';
+    homeBtn.innerText = '🏠 Home';
+    homeBtn.onclick = () => window.location='index.html';
+    header.prepend(homeBtn);
+  }
+});
 
 // Load Chapters
 function loadChapters() {
